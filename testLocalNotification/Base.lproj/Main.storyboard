@@ -1,24 +1,525 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cpe-mk-7eX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Local Notification-->
+        <scene sceneID="Ay2-5V-tnE">
+            <objects>
+                <tableViewController id="OQn-jE-1gO" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="O1c-eJ-lRy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="" id="0J4-Zd-oIG">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="8Wj-Nm-eg9">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Wj-Nm-eg9" id="QRT-Cf-7dx">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="按鈕即時發送推播通知" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDF-zi-HRR">
+                                                    <rect key="frame" x="40" y="21" width="173.5" height="28"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="NDF-zi-HRR" firstAttribute="leading" secondItem="QRT-Cf-7dx" secondAttribute="leadingMargin" constant="20" id="LBo-7B-JEn"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="NDF-zi-HRR" secondAttribute="bottom" constant="10" id="dfx-E1-rlv"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="NDF-zi-HRR" secondAttribute="trailing" constant="20" id="g02-Qx-4Op"/>
+                                                <constraint firstItem="NDF-zi-HRR" firstAttribute="top" secondItem="QRT-Cf-7dx" secondAttribute="topMargin" constant="10" id="k14-wO-Dd0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="y7m-oo-Yj3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Gtl-lU-5uF">
+                                        <rect key="frame" x="0.0" y="114.5" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gtl-lU-5uF" id="ZRf-Q5-6WC">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="改變音效" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89J-h8-b7q">
+                                                    <rect key="frame" x="40" y="21" width="69.5" height="28"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="89J-h8-b7q" secondAttribute="bottom" constant="10" id="7PB-Hx-p0t"/>
+                                                <constraint firstItem="89J-h8-b7q" firstAttribute="leading" secondItem="ZRf-Q5-6WC" secondAttribute="leadingMargin" constant="20" id="N9b-Jn-s8O"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="89J-h8-b7q" secondAttribute="trailing" constant="20" id="QTA-pp-O17"/>
+                                                <constraint firstItem="89J-h8-b7q" firstAttribute="top" secondItem="ZRf-Q5-6WC" secondAttribute="topMargin" constant="10" id="dy1-SA-d4s"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="wC8-eX-0fU" kind="show" id="5q8-8w-tlJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="HKZ-lz-sDo">
+                                        <rect key="frame" x="0.0" y="184.5" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HKZ-lz-sDo" id="9M6-IY-CNJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="倒數計時發送通知" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n9Z-Lk-avc">
+                                                    <rect key="frame" x="40" y="21" width="139" height="28"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="n9Z-Lk-avc" secondAttribute="bottom" constant="10" id="DeW-m0-iwE"/>
+                                                <constraint firstItem="n9Z-Lk-avc" firstAttribute="leading" secondItem="9M6-IY-CNJ" secondAttribute="leadingMargin" constant="20" id="HVN-sf-e04"/>
+                                                <constraint firstItem="n9Z-Lk-avc" firstAttribute="top" secondItem="9M6-IY-CNJ" secondAttribute="topMargin" constant="10" id="cHp-Vv-C9y"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="n9Z-Lk-avc" secondAttribute="trailing" constant="20" id="tLb-5K-lg5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="AbR-7i-7dD" kind="show" id="blq-gc-aND"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="T9O-Ew-Vwh">
+                                        <rect key="frame" x="0.0" y="254.5" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T9O-Ew-Vwh" id="ARi-y6-7MP">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="特定日期發送通知" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PKt-YU-eOe">
+                                                    <rect key="frame" x="40" y="21" width="139" height="28"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="PKt-YU-eOe" secondAttribute="trailing" constant="20" id="21T-kO-H4h"/>
+                                                <constraint firstItem="PKt-YU-eOe" firstAttribute="leading" secondItem="ARi-y6-7MP" secondAttribute="leadingMargin" constant="20" id="29g-8M-AX8"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="PKt-YU-eOe" secondAttribute="bottom" constant="10" id="VGY-Ed-ZQT"/>
+                                                <constraint firstItem="PKt-YU-eOe" firstAttribute="top" secondItem="ARi-y6-7MP" secondAttribute="topMargin" constant="10" id="dCz-Wa-jv5"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="oww-ub-g8W" kind="show" id="I9J-TN-ex4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="bPw-qc-Efm">
+                                        <rect key="frame" x="0.0" y="324.5" width="414" height="70"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bPw-qc-Efm" id="gLO-z0-ZEv">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每週重複發送推播通知" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCQ-pC-dlU">
+                                                    <rect key="frame" x="40" y="21" width="173.5" height="28"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="aCQ-pC-dlU" secondAttribute="bottom" constant="10" id="CaL-Zq-dFs"/>
+                                                <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="aCQ-pC-dlU" secondAttribute="trailing" constant="20" id="Dg4-Kj-MWD"/>
+                                                <constraint firstItem="aCQ-pC-dlU" firstAttribute="leading" secondItem="gLO-z0-ZEv" secondAttribute="leadingMargin" constant="20" id="Qd6-3g-aIo"/>
+                                                <constraint firstItem="aCQ-pC-dlU" firstAttribute="top" secondItem="gLO-z0-ZEv" secondAttribute="topMargin" constant="10" id="ab1-Op-6xs"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="llL-eD-wIJ" kind="show" id="8FY-U6-E8D"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="OQn-jE-1gO" id="vfX-1P-0Yb"/>
+                            <outlet property="delegate" destination="OQn-jE-1gO" id="Aas-dM-Tq6"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Local Notification" largeTitleDisplayMode="always" id="sD5-aJ-dzZ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g3o-48-hB1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="102.45535714285714"/>
+        </scene>
+        <!--按鈕即時發送推播通知-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="按鈕即時發送推播通知" id="BYZ-38-t0r" customClass="BasicLocalNotificationViewController" customModule="testLocalNotification" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmf-2u-HzX">
+                                <rect key="frame" x="101" y="426" width="212" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="hand.tap.fill" catalog="system" title="發送推播通知   ">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="sentNotification:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rq1-Jv-wdx"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="✔️ 發送推播通知 ✔️ 向下拖曳顯示圖片 ✔️ 點擊顯示網頁" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Y1V-fQ-Gdd">
+                                <rect key="frame" x="10" y="490" width="394" height="352"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Y1V-fQ-Gdd" firstAttribute="top" secondItem="vmf-2u-HzX" secondAttribute="bottom" constant="20" id="Bhc-AJ-whk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y1V-fQ-Gdd" secondAttribute="trailing" constant="10" id="UbS-Gk-FVS"/>
+                            <constraint firstItem="vmf-2u-HzX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZZQ-Zr-5iy"/>
+                            <constraint firstItem="Y1V-fQ-Gdd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="dkO-cW-Jkm"/>
+                            <constraint firstItem="vmf-2u-HzX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nYJ-HT-cgT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Y1V-fQ-Gdd" secondAttribute="bottom" constant="20" id="rnh-MU-Bnp"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="按鈕即時發送推播通知" id="ksi-rr-7QE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="916" y="-562"/>
+        </scene>
+        <!--改變音效-->
+        <scene sceneID="sgh-9d-hcb">
+            <objects>
+                <viewController id="wC8-eX-0fU" customClass="CustomNotificationSoundViewController" customModule="testLocalNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2ov-VQ-DN1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="giC-oN-2ub">
+                                <rect key="frame" x="0.0" y="318" width="414" height="260"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tNs-UE-E7f">
+                                        <rect key="frame" x="47" y="0.0" width="320" height="216"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="wC8-eX-0fU" id="tuR-Wj-qSB"/>
+                                            <outlet property="delegate" destination="wC8-eX-0fU" id="SDw-r4-pGQ"/>
+                                        </connections>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRf-Pi-Bw9">
+                                        <rect key="frame" x="101" y="216" width="212" height="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="hand.tap.fill" catalog="system" title="發送推播通知   ">
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="sentNotification:" destination="wC8-eX-0fU" eventType="touchUpInside" id="fAU-3V-i0h"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Z4N-Rd-Yct"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="giC-oN-2ub" firstAttribute="centerY" secondItem="2ov-VQ-DN1" secondAttribute="centerY" id="U8Z-58-Qgd"/>
+                            <constraint firstItem="Z4N-Rd-Yct" firstAttribute="trailing" secondItem="giC-oN-2ub" secondAttribute="trailing" id="art-tL-bAJ"/>
+                            <constraint firstItem="giC-oN-2ub" firstAttribute="leading" secondItem="Z4N-Rd-Yct" secondAttribute="leading" id="iEA-pg-Z1X"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="改變音效" id="sAR-ry-Thk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aGG-Jx-o6D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1690" y="-563"/>
+        </scene>
+        <!--特定日期發送通知-->
+        <scene sceneID="QEB-cX-zK1">
+            <objects>
+                <viewController id="oww-ub-g8W" customClass="NotificationForSpecificDateViewController" customModule="testLocalNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0WR-67-gRf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Fsj-7I-gqu">
+                                <rect key="frame" x="0.0" y="318" width="414" height="260"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="SaK-w7-vmo">
+                                        <rect key="frame" x="47" y="0.0" width="320" height="216"/>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3j-nm-PIo">
+                                        <rect key="frame" x="101" y="216" width="212" height="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="hand.tap.fill" catalog="system" title="發送推播通知   ">
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="sentNotification:" destination="oww-ub-g8W" eventType="touchUpInside" id="AXl-0c-3sJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="B0Z-AS-w2l"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="B0Z-AS-w2l" firstAttribute="trailing" secondItem="Fsj-7I-gqu" secondAttribute="trailing" id="4MU-87-gyS"/>
+                            <constraint firstItem="Fsj-7I-gqu" firstAttribute="centerY" secondItem="0WR-67-gRf" secondAttribute="centerY" id="RNn-hk-9lS"/>
+                            <constraint firstItem="Fsj-7I-gqu" firstAttribute="leading" secondItem="0WR-67-gRf" secondAttribute="leading" id="Xc0-nb-uTU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="特定日期發送通知" id="vMk-l6-XCM"/>
+                    <connections>
+                        <outlet property="specificDatePicker" destination="SaK-w7-vmo" id="j5k-O0-l4c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AhV-NR-97Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1690" y="102"/>
+        </scene>
+        <!--每週重複發送推播通知-->
+        <scene sceneID="79y-sB-4WK">
+            <objects>
+                <viewController id="llL-eD-wIJ" customClass="NotificationForRepeatWeekViewController" customModule="testLocalNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="izu-yd-5XK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="G1q-4t-ktj">
+                                <rect key="frame" x="20" y="272.5" width="374" height="351"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="caM-pe-bI7">
+                                        <rect key="frame" x="36" y="0.0" width="302" height="277"/>
+                                        <subviews>
+                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="ZlN-EJ-rWy">
+                                                <rect key="frame" x="0.0" y="0.0" width="131" height="277"/>
+                                            </datePicker>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GEa-mA-sNV">
+                                                <rect key="frame" x="171" y="0.0" width="131" height="277"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="oUY-J7-wwm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="131" height="31"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星期一" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TuI-hu-ELr">
+                                                                <rect key="frame" x="0.0" y="0.0" width="52" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jiH-bj-enk">
+                                                                <rect key="frame" x="82" y="0.0" width="51" height="31"/>
+                                                            </switch>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="dSi-jP-isX">
+                                                        <rect key="frame" x="0.0" y="41" width="131" height="31"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星期二" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QsU-bB-dVr">
+                                                                <rect key="frame" x="0.0" y="0.0" width="52" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ii-BH-Ekd">
+                                                                <rect key="frame" x="82" y="0.0" width="51" height="31"/>
+                                                            </switch>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Bdc-1c-7zo">
+                                                        <rect key="frame" x="0.0" y="82" width="131" height="31"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星期三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWF-g8-Kne">
+                                                                <rect key="frame" x="0.0" y="0.0" width="52" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wKr-fV-fPq">
+                                                                <rect key="frame" x="82" y="0.0" width="51" height="31"/>
+                                                            </switch>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="XrF-ic-H1a">
+                                                        <rect key="frame" x="0.0" y="123" width="131" height="31"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星期四" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOZ-qK-1mC">
+                                                                <rect key="frame" x="0.0" y="0.0" width="52" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ewq-Q5-mkx">
+                                                                <rect key="frame" x="82" y="0.0" width="51" height="31"/>
+                                                            </switch>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="9cw-sI-b2p">
+                                                        <rect key="frame" x="0.0" y="164" width="131" height="31"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星期五" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AdM-C9-WWb">
+                                                                <rect key="frame" x="0.0" y="0.0" width="52" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mo3-wC-gcg">
+                                                                <rect key="frame" x="82" y="0.0" width="51" height="31"/>
+                                                            </switch>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="iZl-qX-ITi">
+                                                        <rect key="frame" x="0.0" y="205" width="131" height="31"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星期六" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sb1-jU-5WD">
+                                                                <rect key="frame" x="0.0" y="0.0" width="52" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eWp-P4-JKi">
+                                                                <rect key="frame" x="82" y="0.0" width="51" height="31"/>
+                                                            </switch>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="eEW-YS-9lF">
+                                                        <rect key="frame" x="0.0" y="246" width="131" height="31"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星期日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCh-aT-1mC">
+                                                                <rect key="frame" x="0.0" y="0.0" width="52" height="31"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y2o-hF-gfe">
+                                                                <rect key="frame" x="82" y="0.0" width="51" height="31"/>
+                                                            </switch>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mya-4W-f72">
+                                        <rect key="frame" x="81" y="307" width="212" height="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="hand.tap.fill" catalog="system" title="發送推播通知   ">
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="sentNotification:" destination="llL-eD-wIJ" eventType="touchUpInside" id="QAa-Ts-rVH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="90n-AX-90v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="90n-AX-90v" firstAttribute="trailing" secondItem="G1q-4t-ktj" secondAttribute="trailing" constant="20" id="Bof-BI-Ju0"/>
+                            <constraint firstItem="G1q-4t-ktj" firstAttribute="centerY" secondItem="izu-yd-5XK" secondAttribute="centerY" id="WGP-Zi-mYK"/>
+                            <constraint firstItem="G1q-4t-ktj" firstAttribute="leading" secondItem="90n-AX-90v" secondAttribute="leading" constant="20" id="cES-l3-lYf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="每週重複發送推播通知" id="fGY-zJ-U2w"/>
+                    <connections>
+                        <outlet property="specificTimeDatePicker" destination="ZlN-EJ-rWy" id="4aN-jO-gvi"/>
+                        <outletCollection property="weekdaysSwitch" destination="y2o-hF-gfe" collectionClass="NSMutableArray" id="WER-jy-g1H"/>
+                        <outletCollection property="weekdaysSwitch" destination="jiH-bj-enk" collectionClass="NSMutableArray" id="cNz-zf-tFx"/>
+                        <outletCollection property="weekdaysSwitch" destination="4ii-BH-Ekd" collectionClass="NSMutableArray" id="FbN-5S-pRr"/>
+                        <outletCollection property="weekdaysSwitch" destination="wKr-fV-fPq" collectionClass="NSMutableArray" id="X7u-9F-dEd"/>
+                        <outletCollection property="weekdaysSwitch" destination="Ewq-Q5-mkx" collectionClass="NSMutableArray" id="zMM-IO-VNn"/>
+                        <outletCollection property="weekdaysSwitch" destination="mo3-wC-gcg" collectionClass="NSMutableArray" id="wDd-6B-meg"/>
+                        <outletCollection property="weekdaysSwitch" destination="eWp-P4-JKi" collectionClass="NSMutableArray" id="35V-iI-lsm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qqt-6Y-ass" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2460.8695652173915" y="101.78571428571428"/>
+        </scene>
+        <!--倒數計時發送通知-->
+        <scene sceneID="jaD-6Y-n8a">
+            <objects>
+                <viewController id="AbR-7i-7dD" customClass="NotificationByTimeIntervalTriggerViewController" customModule="testLocalNotification" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pPS-hQ-fhi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eFH-Qh-alT">
+                                <rect key="frame" x="0.0" y="318" width="414" height="260"/>
+                                <subviews>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" style="wheels" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plv-eE-Uy7">
+                                        <rect key="frame" x="47" y="0.0" width="320" height="216"/>
+                                    </datePicker>
+                                    <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8D-7D-c2V">
+                                        <rect key="frame" x="101" y="216" width="212" height="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="hand.tap.fill" catalog="system" title="發送推播通知   ">
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="sentNotification:" destination="AbR-7i-7dD" eventType="touchUpInside" id="cEF-uD-bsW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LpG-69-ebA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eFH-Qh-alT" firstAttribute="centerY" secondItem="pPS-hQ-fhi" secondAttribute="centerY" id="HUK-9g-5Iv"/>
+                            <constraint firstItem="eFH-Qh-alT" firstAttribute="leading" secondItem="LpG-69-ebA" secondAttribute="leading" id="KSn-HH-xWa"/>
+                            <constraint firstItem="LpG-69-ebA" firstAttribute="trailing" secondItem="eFH-Qh-alT" secondAttribute="trailing" id="X52-ZV-r42"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="倒數計時發送通知" id="nT6-j7-tV7"/>
+                    <connections>
+                        <outlet property="countdownDatePicker" destination="plv-eE-Uy7" id="cAR-ub-M1m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gTg-J6-S7T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="102"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="y3l-Rd-jXF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cpe-mk-7eX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OwU-o6-9CU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OQn-jE-1gO" kind="relationship" relationship="rootViewController" id="U5X-I5-4li"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jlL-UU-M03" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-778.26086956521749" y="102.45535714285714"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="hand.tap.fill" catalog="system" width="115" height="128"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

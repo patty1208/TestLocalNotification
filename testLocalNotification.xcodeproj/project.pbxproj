@@ -9,23 +9,45 @@
 /* Begin PBXBuildFile section */
 		C9E1C4702738EFE900B2B12A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1C46F2738EFE900B2B12A /* AppDelegate.swift */; };
 		C9E1C4722738EFE900B2B12A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1C4712738EFE900B2B12A /* SceneDelegate.swift */; };
-		C9E1C4742738EFE900B2B12A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1C4732738EFE900B2B12A /* ViewController.swift */; };
 		C9E1C4772738EFE900B2B12A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E1C4752738EFE900B2B12A /* Main.storyboard */; };
 		C9E1C47A2738EFE900B2B12A /* testLocalNotification.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9E1C4782738EFE900B2B12A /* testLocalNotification.xcdatamodeld */; };
 		C9E1C47C2738EFED00B2B12A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9E1C47B2738EFED00B2B12A /* Assets.xcassets */; };
 		C9E1C47F2738EFED00B2B12A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9E1C47D2738EFED00B2B12A /* LaunchScreen.storyboard */; };
+		C9E1C4872738F63500B2B12A /* BasicLocalNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1C4862738F63500B2B12A /* BasicLocalNotificationViewController.swift */; };
+		C9E1C4892738FB4C00B2B12A /* alarm-clock.png in Resources */ = {isa = PBXBuildFile; fileRef = C9E1C4882738FB4C00B2B12A /* alarm-clock.png */; };
+		C9E1C48B27390AC200B2B12A /* bensound-sunny-cut.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E1C48A27390AC200B2B12A /* bensound-sunny-cut.mp3 */; };
+		C9E1C48D273916DF00B2B12A /* CustomNotificationSoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1C48C273916DF00B2B12A /* CustomNotificationSoundViewController.swift */; };
+		C9E1C4922739191B00B2B12A /* bensound-ukulele-cut.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E1C48E2739191B00B2B12A /* bensound-ukulele-cut.mp3 */; };
+		C9E1C4932739191B00B2B12A /* bensound-onceagain-cut.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E1C48F2739191B00B2B12A /* bensound-onceagain-cut.mp3 */; };
+		C9E1C4942739191B00B2B12A /* bensound-clearday-cut.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E1C4902739191B00B2B12A /* bensound-clearday-cut.mp3 */; };
+		C9E1C4952739191B00B2B12A /* bensound-littleidea-cut.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C9E1C4912739191B00B2B12A /* bensound-littleidea-cut.mp3 */; };
+		C9E1C4972739192C00B2B12A /* mixkit-tick-tock-clock-timer-1045.wav in Resources */ = {isa = PBXBuildFile; fileRef = C9E1C4962739192C00B2B12A /* mixkit-tick-tock-clock-timer-1045.wav */; };
+		C9E1C49B2739809500B2B12A /* NotificationByTimeIntervalTriggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1C49A2739809500B2B12A /* NotificationByTimeIntervalTriggerViewController.swift */; };
+		C9E1C49F2739854D00B2B12A /* NotificationForSpecificDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1C49E2739854D00B2B12A /* NotificationForSpecificDateViewController.swift */; };
+		C9E1C4A12739857600B2B12A /* NotificationForRepeatWeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E1C4A02739857600B2B12A /* NotificationForRepeatWeekViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C9E1C46C2738EFE900B2B12A /* testLocalNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testLocalNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9E1C46F2738EFE900B2B12A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9E1C4712738EFE900B2B12A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C9E1C4732738EFE900B2B12A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C9E1C4762738EFE900B2B12A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9E1C4792738EFE900B2B12A /* testLocalNotification.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testLocalNotification.xcdatamodel; sourceTree = "<group>"; };
 		C9E1C47B2738EFED00B2B12A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C9E1C47E2738EFED00B2B12A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C9E1C4802738EFED00B2B12A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C9E1C4862738F63500B2B12A /* BasicLocalNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicLocalNotificationViewController.swift; sourceTree = "<group>"; };
+		C9E1C4882738FB4C00B2B12A /* alarm-clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alarm-clock.png"; sourceTree = "<group>"; };
+		C9E1C48A27390AC200B2B12A /* bensound-sunny-cut.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-sunny-cut.mp3"; sourceTree = "<group>"; };
+		C9E1C48C273916DF00B2B12A /* CustomNotificationSoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNotificationSoundViewController.swift; sourceTree = "<group>"; };
+		C9E1C48E2739191B00B2B12A /* bensound-ukulele-cut.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-ukulele-cut.mp3"; sourceTree = "<group>"; };
+		C9E1C48F2739191B00B2B12A /* bensound-onceagain-cut.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-onceagain-cut.mp3"; sourceTree = "<group>"; };
+		C9E1C4902739191B00B2B12A /* bensound-clearday-cut.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-clearday-cut.mp3"; sourceTree = "<group>"; };
+		C9E1C4912739191B00B2B12A /* bensound-littleidea-cut.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bensound-littleidea-cut.mp3"; sourceTree = "<group>"; };
+		C9E1C4962739192C00B2B12A /* mixkit-tick-tock-clock-timer-1045.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "mixkit-tick-tock-clock-timer-1045.wav"; sourceTree = "<group>"; };
+		C9E1C49A2739809500B2B12A /* NotificationByTimeIntervalTriggerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationByTimeIntervalTriggerViewController.swift; sourceTree = "<group>"; };
+		C9E1C49E2739854D00B2B12A /* NotificationForSpecificDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationForSpecificDateViewController.swift; sourceTree = "<group>"; };
+		C9E1C4A02739857600B2B12A /* NotificationForRepeatWeekViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationForRepeatWeekViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +80,21 @@
 		C9E1C46E2738EFE900B2B12A /* testLocalNotification */ = {
 			isa = PBXGroup;
 			children = (
+				C9E1C48A27390AC200B2B12A /* bensound-sunny-cut.mp3 */,
+				C9E1C4902739191B00B2B12A /* bensound-clearday-cut.mp3 */,
+				C9E1C4912739191B00B2B12A /* bensound-littleidea-cut.mp3 */,
+				C9E1C48F2739191B00B2B12A /* bensound-onceagain-cut.mp3 */,
+				C9E1C48E2739191B00B2B12A /* bensound-ukulele-cut.mp3 */,
+				C9E1C4962739192C00B2B12A /* mixkit-tick-tock-clock-timer-1045.wav */,
+				C9E1C4882738FB4C00B2B12A /* alarm-clock.png */,
 				C9E1C46F2738EFE900B2B12A /* AppDelegate.swift */,
 				C9E1C4712738EFE900B2B12A /* SceneDelegate.swift */,
-				C9E1C4732738EFE900B2B12A /* ViewController.swift */,
 				C9E1C4752738EFE900B2B12A /* Main.storyboard */,
+				C9E1C4862738F63500B2B12A /* BasicLocalNotificationViewController.swift */,
+				C9E1C49A2739809500B2B12A /* NotificationByTimeIntervalTriggerViewController.swift */,
+				C9E1C48C273916DF00B2B12A /* CustomNotificationSoundViewController.swift */,
+				C9E1C49E2739854D00B2B12A /* NotificationForSpecificDateViewController.swift */,
+				C9E1C4A02739857600B2B12A /* NotificationForRepeatWeekViewController.swift */,
 				C9E1C47B2738EFED00B2B12A /* Assets.xcassets */,
 				C9E1C47D2738EFED00B2B12A /* LaunchScreen.storyboard */,
 				C9E1C4802738EFED00B2B12A /* Info.plist */,
@@ -128,9 +161,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9E1C4942739191B00B2B12A /* bensound-clearday-cut.mp3 in Resources */,
+				C9E1C4932739191B00B2B12A /* bensound-onceagain-cut.mp3 in Resources */,
+				C9E1C4892738FB4C00B2B12A /* alarm-clock.png in Resources */,
+				C9E1C4952739191B00B2B12A /* bensound-littleidea-cut.mp3 in Resources */,
 				C9E1C47F2738EFED00B2B12A /* LaunchScreen.storyboard in Resources */,
 				C9E1C47C2738EFED00B2B12A /* Assets.xcassets in Resources */,
+				C9E1C4922739191B00B2B12A /* bensound-ukulele-cut.mp3 in Resources */,
 				C9E1C4772738EFE900B2B12A /* Main.storyboard in Resources */,
+				C9E1C48B27390AC200B2B12A /* bensound-sunny-cut.mp3 in Resources */,
+				C9E1C4972739192C00B2B12A /* mixkit-tick-tock-clock-timer-1045.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9E1C4872738F63500B2B12A /* BasicLocalNotificationViewController.swift in Sources */,
 				C9E1C47A2738EFE900B2B12A /* testLocalNotification.xcdatamodeld in Sources */,
-				C9E1C4742738EFE900B2B12A /* ViewController.swift in Sources */,
+				C9E1C49F2739854D00B2B12A /* NotificationForSpecificDateViewController.swift in Sources */,
 				C9E1C4702738EFE900B2B12A /* AppDelegate.swift in Sources */,
+				C9E1C49B2739809500B2B12A /* NotificationByTimeIntervalTriggerViewController.swift in Sources */,
+				C9E1C48D273916DF00B2B12A /* CustomNotificationSoundViewController.swift in Sources */,
+				C9E1C4A12739857600B2B12A /* NotificationForRepeatWeekViewController.swift in Sources */,
 				C9E1C4722738EFE900B2B12A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,12 +345,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.patty.testLocalNotification;
+				PRODUCT_BUNDLE_IDENTIFIER = com.patty.TestLocalNotification123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -329,12 +374,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.patty.testLocalNotification;
+				PRODUCT_BUNDLE_IDENTIFIER = com.patty.TestLocalNotification123;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
